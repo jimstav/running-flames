@@ -8,13 +8,16 @@
     <title>Running Flames</title>
   </head>
   <body>
-    <head>
+    <header>
       <section class="hero">
-        <img src="./resources/images/running-flames-logo.jpg" alt="Running
+        <img
+          src="./resources/images/running-flames-logo.jpg"
+          alt="Running
         Flames logo"
+        />
       </section>
       <h1>Running Flames</h1>
-      <p>Official Homepage</p>
+      <p class="subtitle">Official Page</p>
       <nav>
         <ul>
           <li><a href="#bio">Bio</a></li>
@@ -23,10 +26,10 @@
           <li><a href="#members">Members</a></li>
         </ul>
       </nav>
-    </head>
+    </header>
     <main>
       <!-- Bio section -->
-      <section id="bio">
+      <section id="bio" class="container">
         <h2>Bio</h2>
         <p>
           Running Flames were formed in Athens on September 2013. Influenced by
@@ -36,13 +39,13 @@
       </section>
 
       <!-- Discography section -->
-      <section id="discography">
+      <section id="discography" class="container">
         <h2>Discography</h2>
         <article class="album">
           <img
             src="./resources/images/through-fire-and-sand-cover.jpg"
             alt="Through Fire and Sand cover"
-            height="400px"
+            class="album-cover"
           />
           <h3>Through Fire and Sand</h3>
           <p>2023</p>
@@ -67,11 +70,11 @@
       </section>
 
       <!-- Media section -->
-      <section id="media">
+      <section id="media" class="container">
         <h2>Media</h2>
-        <article>
+        <article class="media-item">
           <iframe
-            style="border: 0; width: 350px; height: 470px"
+            class="album-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=1506455740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
             seamless
             ><a
@@ -81,39 +84,33 @@
           >
           <h3>Through Fire and Sand</h3>
         </article>
-        <article>
+        <article class="media-item">
           <iframe
-            width="560"
-            height="315"
+            class="video-player"
             src="https://www.youtube.com/embed/zni6CN0zM2w?si=UGmBYiOVQj9GrepG"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
           <h3>Message in a Bottle</h3>
         </article>
-        <article>
+        <article class="media-item">
           <iframe
-            width="560"
-            height="315"
+            class="video-player"
             src="https://www.youtube.com/embed/3Q8kZVWHFLk?si=UDMGCTYeWANKWHZ8"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
           <h3>Race in the Sky</h3>
         </article>
-        <article>
+        <article class="media-item">
           <iframe
-            width="560"
-            height="315"
+            class="video-player"
             src="https://www.youtube.com/embed/JOnbdUdj-oU?si=PGa0JwkWHmhI8yQe"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
@@ -123,84 +120,88 @@
       </section>
 
       <!-- Members section -->
-      <section id="members">
+      <section id="members" class="container">
         <h2>Members</h2>
-        <article>
-          <img
-            src="./resources/images/chris.jpg"
-            alt="Christos Orfanidis"
-            height="400"
-          />
-          <h2>Vocals: Christos Orfanidis</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            velit iste quidem quo asperiores illum placeat explicabo facilis
-            ullam necessitatibus?
-          </p>
-        </article>
-        <article>
-          <img
-            src="./resources/images/vagg.jpg"
-            alt="Vaggelis Mountzouroulias"
-            height="400"
-          />
-          <h2>Guitar: Vaggelis Mountzouroulias</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
-            ducimus laboriosam saepe tempore eveniet perferendis harum
-            reiciendis obcaecati itaque! Molestias!
-          </p>
-        </article>
-        <article>
-          <img
-            src="./resources/images/john.jpg"
-            alt="John Tzigounakis"
-            height="400"
-          />
-          <h2>Guitar: John Tzigounakis</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            sed necessitatibus repellendus exercitationem quibusdam aut odit,
-            officia sunt repudiandae ut!
-          </p>
-        </article>
-        <article>
-          <img
-            src="./resources/images/orestis.jpg"
-            alt="Orestis Zannetopoulos"
-            height="400"
-          />
-          <h2>Bass Guitar: Orestis Zannetopoulos</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-            facere eaque officia vel consequuntur velit vitae fugit blanditiis
-            incidunt cupiditate.
-          </p>
-        </article>
-        <article>
-          <img
-            src="./resources/images/jim.jpg"
-            alt="Dimitris Stavroulakis"
-            height="400"
-          />
-          <h2>Drums: Dimitris Stavroulakis</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-            assumenda, fuga fugiat itaque debitis iure asperiores doloremque
-            eaque temporibus incidunt?
-          </p>
-        </article>
+        <div class="members-box">
+          <article class="member-item">
+            <img
+              src="./resources/images/chris.jpg"
+              alt="Christos Orfanidis"
+              height="400"
+            />
+            <h3>Vocals: Christos Orfanidis</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              velit iste quidem quo asperiores illum placeat explicabo facilis
+              ullam necessitatibus?
+            </p>
+          </article>
+          <article class="member-item">
+            <img
+              src="./resources/images/vagg.jpg"
+              alt="Vaggelis Mountzouroulias"
+              height="400"
+            />
+            <h3>Guitar: Vaggelis Mountzouroulias</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Cupiditate ducimus laboriosam saepe tempore eveniet perferendis
+              harum reiciendis obcaecati itaque! Molestias!
+            </p>
+          </article>
+          <article class="member-item">
+            <img
+              src="./resources/images/john.jpg"
+              alt="John Tzigounakis"
+              height="400"
+            />
+            <h3>Guitar: John Tzigounakis</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus sed necessitatibus repellendus exercitationem quibusdam
+              aut odit, officia sunt repudiandae ut!
+            </p>
+          </article>
+          <article class="member-item">
+            <img
+              src="./resources/images/orestis.jpg"
+              alt="Orestis Zannetopoulos"
+              height="400"
+            />
+            <h3>Bass Guitar: Orestis Zannetopoulos</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+              facere eaque officia vel consequuntur velit vitae fugit blanditiis
+              incidunt cupiditate.
+            </p>
+          </article>
+          <article class="member-item">
+            <img
+              src="./resources/images/jim.jpg"
+              alt="Dimitris Stavroulakis"
+              height="400"
+            />
+            <h3>Drums: Dimitris Stavroulakis</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              assumenda, fuga fugiat itaque debitis iure asperiores doloremque
+              eaque temporibus incidunt?
+            </p>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
       <!-- Contact -->
-      <section>
+      <section class="container">
         <div>Find us on social media:</div>
         <div>Email: band@runningflames.com</div>
       </section>
 
       <!-- Copyright -->
-      <section><small>&copy; Running Flames 2024</small></section>
+      <section class="copyright">
+        <small>&copy; Running Flames 2024</small>
+      </section>
     </footer>
   </body>
 </html>
