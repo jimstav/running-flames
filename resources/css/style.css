@@ -9,8 +9,12 @@ body {
   width: 100%;
 }
 
-main {
-  color: #fffbd7;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  background-color: #000;
 }
 
 h1,
@@ -23,6 +27,7 @@ h3 {
 h1 {
   font-size: 8rem;
   font-family: "Bruno Ace SC", sans-serif;
+  margin: 1rem 0;
 }
 
 h2 {
@@ -35,23 +40,32 @@ h3 {
 }
 
 nav {
-  margin: 8rem auto;
-}
-
-nav a {
-  text-decoration: none;
-  color: #f29b30;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #733224;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 
 nav li {
   display: inline;
   font-size: 3rem;
+  margin: 0 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f29b30;
 }
 
 p {
@@ -61,13 +75,15 @@ p {
 .hero {
   margin: 0 auto;
   background-color: #000;
-  display: flex;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .hero img {
   width: 50%;
   margin: 0 auto;
   border-radius: 1rem;
+  margin-bottom: 5rem;
 }
 
 .container {
@@ -76,9 +92,14 @@ p {
   color: #fffbd7;
 }
 
+.bio {
+  text-align: center;
+}
+
 .subtitle {
   text-align: center;
   color: #fffbd7;
+  margin-bottom: 4rem;
 }
 
 .album {
@@ -133,10 +154,28 @@ p {
 
 .copyright {
   color: #fffbd7;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media-icon {
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
 }
 
 #media {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#social-media-box {
+  display: inline;
+  text-align: center;
+  margin-bottom: 3rem;
 }
