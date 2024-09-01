@@ -84,6 +84,11 @@ nav li {
 nav a {
   text-decoration: none;
   color: #f29b30;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #fffbd7;
 }
 
 p {
@@ -139,6 +144,13 @@ p {
   }
 }
 
+.media-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
 .album-player {
   border: 0;
   border-radius: 1rem;
@@ -170,8 +182,10 @@ p {
 .members-box {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .member-item {
@@ -181,18 +195,20 @@ p {
   align-items: center;
   margin: 0 5rem 4rem;
   padding: auto 5rem;
+  max-width: 30rem;
 }
 
 .member-item img {
-  max-width: 30rem;
-  height: auto;
+  width: 30rem;
+  height: 40rem;
   border-radius: 1rem;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 700px) {
   .member-item img {
-    min-width: 30rem;
-    max-width: 40rem;
+    width: 40rem;
+    height: 50rem;
   }
 }
 
